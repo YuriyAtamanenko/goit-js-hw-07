@@ -3,8 +3,6 @@ import { galleryItems } from "./gallery-items.js";
 
 const ImgsContainer = document.querySelector(".gallery");
 
-ImgsContainer.addEventListener("click", onOpenOriginalImg);
-
 const createImgMarkup = galleryItems
   .map(({ preview, original, description }) => {
     return `<li class="gallery__item">
